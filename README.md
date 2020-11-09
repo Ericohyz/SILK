@@ -3,6 +3,6 @@
 Here we provide an implementation of SILK.
 
 ### How to run example:
-'''bash
+'''
 python main.py --input data/imdb --dimensions 128 --walk_length 50 --num_walks 10 --window-size 5 --alpha 0.5 --output movie_embeddings.txt
 '''
