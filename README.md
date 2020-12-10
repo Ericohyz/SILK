@@ -1,7 +1,7 @@
 # SILK
 ## Walking with Attention: Self-guided Walking for Heterogeneous Graph Embedding
 Here we provide an implementation of SILK.
-![hustlin_erd](figure2.pdf)
+![SILK](figure2.pdf)
 ### Environment settings
 
 - python==3.8.2
