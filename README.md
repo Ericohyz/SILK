@@ -1,6 +1,6 @@
 # SILK
 ## Walking with Attention: Self-guided Walking for Heterogeneous Graph Embedding
-Here we provide an implementation of SILK.
+Here we provide an implementation of SILK. SILK assumes no prior knowledge or annotation is provided, and conducts a customized random walk to encode the contexts of the heterogeneous graph of interest. Specifically, this is achieved via maintaining a dynamically-updated guidance matrix that records the node-conditioned transition potentials.
 ![SILK](figure2.pdf)
 ### Environment settings
 
