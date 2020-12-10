@@ -1,6 +1,7 @@
 # SILK
 ## Walking with Attention: Self-guided Walking for Heterogeneous Graph Embedding
 Here we provide an implementation of SILK.
+![hustlin_erd](figure2.pdf)
 ### Environment settings
 
 - python==3.8.2
@@ -50,3 +51,4 @@ In order to use your own data, you have to provide
 - an |V| label list (|V| is the number of nodes).
 
 In this example, we load IMDB dataset. The original dataset is provided by https://github.com/Jhy1993/HAN.
+
