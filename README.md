@@ -4,6 +4,9 @@ Here we provide an implementation of SILK.
 ### Environment settings
 
 - python==3.8.2
+- networkx==1.11
+- numpy==1.11.2
+- gensim==0.13.3
 ### How to run example:
 
 ```python
