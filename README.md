@@ -7,8 +7,27 @@ Here we provide an implementation of SILK.
 - networkx==1.11
 - numpy==1.11.2
 - gensim==0.13.3
-### How to run example:
+### How to run example
 
 ```python
 python main.py --input data/imdb --dimensions 128 --walk_length 50 --num_walks 10 --window-size 5 --alpha 0.5 --output movie_embeddings.txt
 ```
+#### General Options
+
+- --input the input file of a graph;
+- --type the node type for classification;
+- --alpha the initial revise probability;
+- --epochs the number of epochs;
+- --dimensions the number of diimensions;
+- --walk_length the length of random walks;
+- --num_walks the number of random walks;
+- --window-size the window size for skip-gram model;
+- --output the output file of representation;
+- --clf_ratio the ratio of training data for node classification;
+### Data
+In order to use your own data, you have to provide
+
+- an |E| edge list (|E| is the number of edges),
+- an |V| label list (|V| is the number of nodes).
+
+In this example, we load IMDB dataset. The original dataset is provided by https://github.com/Jhy1993/HAN.
