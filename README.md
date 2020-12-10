@@ -24,7 +24,26 @@ python main.py --input data/imdb --dimensions 128 --walk_length 50 --num_walks 1
 - --window-size the window size for skip-gram model;
 - --output the output file of representation;
 - --clf_ratio the ratio of training data for node classification;
-### Data
+
+#### Input
+The supported input format is the edgelist of a graph:
+
+```python
+edgelist: node1 node2 <weight_float, optional>
+```
+#### Output
+The output file has n+1 lines for a graph with n nodes. The first line has the folloowing format:
+
+```python
+number_of_nodes dim_of_embedding
+```
+The next n lines are as follows:
+
+```python
+node_id dim1 diim2 ... dimd
+```
+where dim1,...,dimd is the d-dimensional embedding learned by SILK.
+#### Data
 In order to use your own data, you have to provide
 
 - an |E| edge list (|E| is the number of edges),
